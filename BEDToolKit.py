@@ -5,7 +5,7 @@ import statistics
 def print_help():
     print("Usage:                 python3.9 Dragencovstats.py <function_name> </path/to/the/BED_file>")
     print("bed_overlap_remover:   It removes lines that have overlapping ranges within the same chromosome and exome.")
-    print(":        ")
+    print("BedStats:              Calculate statistics for the BED file.")
     print("")
     print("Script by Krishna Vaibhav Tiwari")
 
@@ -124,8 +124,6 @@ def main():
 
     sys.stdout = sys.__stdout__
     sys.stderr = sys.__stderr__
-    # Close the output file
-    #stdout.close()
     sys.stdout.close()
 
 if __name__ == "__main__":
